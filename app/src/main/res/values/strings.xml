@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Gamerapp</string>
+    <string name="register_now"><u>Register Now</u></string>
+    <string name="don_t_have_an_account">Don\'t have an account ?</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="full_name">FullName</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="or">OR</string>
+    <string name="loginwithfb">LoginWithFB</string>
+    <string name="loginwithgmail">LoginWithGMAIL</string>
+    <string name="terms_and_conditions">By registering you agree to our <u>Terms &amp; Conditions</u> and <u>Privacy Policy</u> </string>
+    <string name="forgot_password_UI">Forgot Password</string>
+    <string name="please_enter_your_registered_email_to_reset_your_password">Please enter your registered email to reset your password</string>
+    <string name="submit">Submit</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="enter_the_code_sent_to_you_by_email_or_mobile_number">Enter the code sent to you by Email or Mobile number</string>
+    <string name="reset_password_info_text">Please enter your new password and confirm it.</string>
+    <string name="reset_password_title">Reset Password.</string>
+    <string name="new_password_hint">New password</string>
+    <string name="new_password_confirm_hint">Confirm new password</string>
+    <string name="resend_code_button"> <u>Resend Code</u> </string>
+    <string name="resend_help_text">Didn\'t receive a verification code?</string>
+    <string name="verify">Verify</string>
+</resources>
