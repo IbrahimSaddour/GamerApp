@@ -22,54 +22,60 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
+        android:id="@+id/signup_fullname_layout"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:helperTextTextColor="@color/error"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signup_fullname_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/person_icon"
             android:drawablePadding="15dp"
             android:hint="@string/full_name"
-            android:inputType="textEmailAddress" />
+            android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
+        android:id="@+id/signup_email_layout"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        >
+        app:layout_constraintEnd_toEndOf="@+id/signup_fullname_layout"
+        app:layout_constraintStart_toStartOf="@+id/signup_fullname_layout"
+        app:layout_constraintTop_toBottomOf="@+id/signup_fullname_layout"
+        app:helperTextTextColor="@color/error">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signup_email_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/email_icon"
             android:drawablePadding="15dp"
             android:hint="@string/email"
-            android:inputType="textPassword" />
+            android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout3"
+        android:id="@+id/signup_password_layout"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:layout_constraintStart_toStartOf="@+id/signup_fullname_layout"
+        app:layout_constraintTop_toBottomOf="@+id/signup_email_layout"
         app:passwordToggleEnabled="true"
         app:passwordToggleTint="@color/Primary"
-        tools:layout_editor_absoluteY="426dp">
+        tools:layout_editor_absoluteY="426dp"
+        app:helperTextTextColor="@color/error">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signup_password_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/lock_icon"
@@ -79,16 +85,18 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout4"
+        android:id="@+id/signup_password_confirm_layout"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app:layout_constraintStart_toStartOf="@+id/signup_fullname_layout"
+        app:layout_constraintTop_toBottomOf="@+id/signup_password_layout"
         app:passwordToggleEnabled="true"
         app:passwordToggleTint="@color/Primary"
-        tools:layout_editor_absoluteY="426dp">
+        tools:layout_editor_absoluteY="426dp"
+        app:helperTextTextColor="@color/error">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signup_password_confirm_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/lock_icon"
@@ -106,13 +114,13 @@
         android:textColor="@color/textPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/signup_password_confirm_layout"
         android:backgroundTint="@color/colorPrimary"
         android:textSize="18sp"
         />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/signup_textView"
         android:layout_width="323dp"
         android:layout_height="47dp"
         android:layout_marginTop="44dp"
